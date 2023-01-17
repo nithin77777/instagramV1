@@ -11,9 +11,9 @@ def getCreds():
 
     creds = dict()  # dictionary to hold everything
     # creds['access_token'] = 'EAArzIaDdM60BABy25jm83ZAFZBaMI8cCBKdwaadtbHuJNwB9UYlwZARfvpa4VC5uZAmXnSVhGYqwDt4FZBZAcM2If9IV1T68cDtFxGZBMBOxGQnDJtg6EzZAtDBuM2wYfZC3lnrblhHs0S2ZCWyB8PzAuWWCbaeZAAJDbutON3RQHCRk5xOUlZAjUs05swYMWIS8IiT3kcutPbiWLYjY1BZAbpnQS'  # access token for use with all api calls
-    creds['access_token'] = 'EAArzIaDdM60BABLJGijhsBMaHTE6Q77HTZCMGNBr2KoKNsZBsOkaOcZCJgGjZBrAwgAR8lY7ZAKWgtxY0Nr1mCVObkQnHqSauWSdCgWAOwVYZCUI0uZC9UAx03DDKdvnS5LA2Quw3U03Sn1HIHR7OsBpxn1RBgMHUFHkiijqNtrAQ39S7e6OZCW4dKjZAGgqhX5Hs6FBAukqsn8DElrR5zd6E'  # access token for use with all api calls
-    creds['client_id'] = '3082075525428141'  # client id from facebook app IG Graph API Test
-    creds['client_secret'] = 'f0237c5b16c45b6dd80cc50f9f36d6c1'  # client secret from facebook app
+    creds['access_token'] = 'EAAvpcvoTLdYBAOg37a3pshBTtZARRUo1Tm1Q9DvgCvp9Y2CVuLc5o1bCGSpcE0ydzACeeTkaz5uK9nZBUPrJWQdV8qaGMRctSptsQaLltevfCZAtR3EZBqkHJ3xZBeKxs0vGSGHGNjcBZAOCDiqMQbQqrXSLHLy0BObgsEhId6ZB1hPnNlRsd6Uqv9NbupJT5A2MJWuqZAIJhjxfsO3SbZBwRMt0v7tLnMZB0ZD'  # access token for use with all api calls
+    creds['client_id'] = '3352904774921686'  # client id from facebook app IG Graph API Test
+    creds['client_secret'] = '889e817816228942e39c7d2ca2ecf549'  # client secret from facebook app
     creds['graph_domain'] = 'https://graph.facebook.com/'  # base domain for api calls
     creds['graph_version'] = 'v6.0'  # version of the api we are hitting
     creds['endpoint_base'] = creds['graph_domain'] + creds['graph_version'] + '/'  # base endpoint with domain and version

@@ -64,7 +64,7 @@ print( "\n---- LATEST POST -----\n" )  # section header
 print( "\tLink to post:" )  # link to post
 print( "\t" + response['json_data']['data'][0]['permalink'] )  # link to post
 print( "\n\tPost caption:" )  # post caption
-print( "\t" + response['json_data']['data'][2]['caption'] )  # post caption
+print( "\t" + response['json_data']['data'][0]['caption'] )  # post caption
 print( "\n\tMedia Type:" )  # type of media
 print( "\t" + response['json_data']['data'][0]['media_type'] )  # type of media
 print( "\n\tPosted at:" )  # when it was posted
