@@ -32,6 +32,7 @@ def getMediaInsights(params):
     endpointParams['access_token'] = params['access_token']  # access token
 
     url = params['endpoint_base'] + params['latest_media_id'] + '/insights'  # endpoint url
+    print('The URL is',url)
 
     return makeApiCall(url, endpointParams, params['debug'])  # make the api call
 
@@ -96,7 +97,7 @@ for highlights in response['json_data']['data']:
     if 'VIDEO' == highlights['media_type']:  # media is a video
         params['metric'] = 'engagement,impressions,reach,saved,video_views'
     else:  # media is an image
-        params['metric'] = 'engagement,impressions,reach,saved,comments,likes,total_interactions,follows,shares,profile_visits,profile_activity'
+        params['metric'] = 'engagement,impressions,reach,saved,comments,likes,total_interactions,follows,shares,profile_visits,profile_activity,'
 
         response = getMediaInsights(params)  # get insights for a specific media id
 
@@ -120,5 +121,6 @@ for insight in response['json_data']['data']:  # loop over user account insights
 
     for value in insight['values']:  # loop over each value
         print( "\t\t" + value['end_time'] + ": " + str(value['value']) )  # print out counts for the date
+
 
 

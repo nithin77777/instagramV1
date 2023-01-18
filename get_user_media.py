@@ -35,7 +35,7 @@ for post in response['json_data']['data']:
     print("Link to post:")  # label
     print(post['permalink'])  # link to post
     print( "\nPost caption:" )  # label
-    print( post['caption']  ) # post caption
+    # print( post['caption']  ) # post caption
     print( "\nMedia type:" )  # label
     print( post['media_type']  ) # type of media
     print( "\nPosted at:" )  # label
